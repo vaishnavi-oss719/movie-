@@ -1,16 +1,120 @@
-# React + Vite
+A modern and responsive Movie Application built using React JS and Tailwind CSS, powered by TheODMDB public API. Users can explore different kinds of movies, view detailed instructions, , and manage Review with a clean Gradient-theme UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Tech Stack
 
-Currently, two official plugins are available:
+React JS – Frontend library
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React Router DOM – Routing & navigation
 
-## React Compiler
+Tailwind CSS – Styling & responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Fetch API – API requests
 
-## Expanding the ESLint configuration
+React Icons – Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ThOMDB API – Movie data source
+
+API Link: 👉VITE_OMDB_API_KEY=899c4fc7
+
+✨ Features 🔐 Authentication UI
+
+Login page for existing users
+
+Signup page for new users
+
+Animated food background
+
+Gradient theme UI
+
+Redirect to login after signup
+
+⚠️ UI-only authentication (no backend)
+
+🏠 Home / Movie Listing Page
+
+Displays movies in 3 rows × 4 columns
+
+Clean movie cards with image & name
+
+Responsive grid layout
+
+Each card is clickable
+
+🔍 Search & Filter
+
+Search Movies by name
+
+Filter recipes by:
+
+Categories
+
+Search & filter work together
+
+📖 Movie Details Page
+
+Large movie image (left side)
+
+Full movie  instructions
+
+Category & movie info
+
+
+
+Back button for easy navigation
+
+Responsive layout
+
+❤️ Review
+Review state managed globally
+
+Visual feedback when recipe is wishlisted
+
+🧭 Navbar
+
+Icons:
+
+Home
+
+Review
+
+Profile (Login/Logout)
+
+Responsive & clean layout
+
+📱 Responsive Design
+
+Fully responsive for:
+
+Mobile
+
+Tablet
+
+Desktop
+
+Tailwind utility classes used throughout
+
+
+
+🧪 How to Run Locally
+
+1️⃣ Clone the repository
+
+git clone https://github.com//movie-app.git
+
+2️⃣ Go to project folder
+
+cd movie-app
+
+3️⃣ Install dependencies
+
+npm install
+
+4️⃣ Start development server
+
+npm run dev
+
+🌐 Deployment
+
+Deployed using Vercel
+
+Continuous deployment via GitHub
