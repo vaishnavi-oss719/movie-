@@ -99,7 +99,7 @@ Tailwind utility classes used throughout
 
 1️⃣ Clone the repository
 
-git clone https://github.com//movie-app.git
+git clone [https://github.com//movie-app.git](https://github.com/vaishnavi-oss719/movie-.git)
 
 2️⃣ Go to project folder
 
