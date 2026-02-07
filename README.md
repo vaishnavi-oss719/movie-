@@ -33,7 +33,7 @@ Redirect to login after signup
 🏠 Home / Movie Listing Page
 
 Displays movies in 3 rows × 4 columns
-
+Background animation image
 Clean movie cards with image & name
 
 Responsive grid layout
@@ -53,15 +53,10 @@ Search & filter work together
 📖 Movie Details Page
 
 Large movie image (left side)
-
+animation image added
 Full movie  instructions
-
 Category & movie info
-
-
-
 Back button for easy navigation
-
 Responsive layout
 
 ❤️ Review
