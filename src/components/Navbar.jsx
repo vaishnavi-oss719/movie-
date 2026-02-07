@@ -8,13 +8,14 @@ export default function Navbar() {
   const reviews =JSON.parse(localStorage.getItem("reviews")) || [];
 
   const handleLogout = () => {
-    // optional: clear auth data
-    localStorage.clear();
-    navigate("/login");
-  };
+  localStorage.removeItem("user");
+  setOpen(false);
+  window.location.href = "/login"; // 🔥 force reset
+};
+
 
   return (
-    <nav className="bg-gradient-to-r from-emerald-500 to-emerald-900 text-white px-6 py-4">
+    <nav className="bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] text-white px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         
         {/* Logo */}
@@ -58,22 +59,22 @@ export default function Navbar() {
           {/* Profile Icon */}
           <button
             onClick={() => setOpen(!open)}
-            className="text-2xl hover:text-yellow-300"
+            className="text-2xl hover:text-yellow-300 cursor-pointer"
           >
             <FaUserCircle />
           </button>
 
           {/* Dropdown */}
           {open && (
-            <div className="absolute right-0 top-12 bg-white text-black rounded shadow w-40">
-              <button
-                onClick={handleLogout}
-                className="flex items-center gap-2 w-full px-4 py-2 hover:bg-gray-100"
-              >
-                <FaSignOutAlt />
-                Logout
-              </button>
-            </div>
+             <div className="absolute right-0 top-14 z-50 bg-white text-black rounded-lg shadow-lg w-40">
+    <button
+      onClick={handleLogout}
+      className="flex items-center gap-2 w-full px-4 py-2 hover:bg-gray-400 cursor-pointer"
+    >
+      <FaSignOutAlt />
+      Logout
+    </button>
+  </div>
           )}
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function Signup() {
       {/* Signup Card */}
       <form
         onSubmit={handleSignup}
-        className="relative z-10 backdrop-blur-lg bg-white/20 p-6 rounded-xl w-80 text-white"
+        className="relative z-10 backdrop-blur-lg bg-white/20 p-6 rounded-xl w-80 text-white cursor-pointer"
       >
         <h2 className="text-2xl font-bold mb-4 text-center">
           🎥 Create Account
@@ -61,13 +61,13 @@ export default function Signup() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button className="w-full bg-green-600 hover:bg-green-700 py-2 rounded font-semibold">
+        <button className="w-full bg-green-600 hover:bg-green-700 py-2 rounded font-semibold cursor-pointer">
           Signup
         </button>
 
         <p className="text-sm mt-4 text-center">
           Already have account?{" "}
-          <Link to="/login" className="text-yellow-400 underline">
+          <Link to="/login" className="text-yellow-400 underline cursor-pointer">
             Login
           </Link>
         </p>
